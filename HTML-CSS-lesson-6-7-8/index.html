@@ -5,6 +5,41 @@
     <meta charset="UTF-8">
     <title>My first website</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .container {
+            width: 100%;
+            max-width: initial;
+            min-width: 1024px;
+        }
+        .lp-section {
+            width: 100%;
+        }
+        .menu-section {
+            text-align: center;
+            height: initial;
+            font-size: 0;
+            overflow: none
+        }
+        .menu-item {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 30px;
+            width: 20%;
+        }
+        .menu-logo {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            top: 15px;
+            line-height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            z-index: 10;
+        }
+        .text-menu-item {
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -12,12 +47,11 @@
 
     <div class="container">
         <div class="lp-section menu-section">
-
-            <div id="menu-item"><a href="#">about me</a></div>
-            <div id="menu-item"><a href="#">portfolio</a></div>
-            <div id="menu-item"><a href="#">my blog</a></div>
-            <div id="menu-item"><a href="#">contact me</a></div>
-            <div id="menu-logo">jd</div>
+            <a class="menu-item text-menu-item" href="#">about me</a>
+            <a class="menu-item text-menu-item" href="#">portfolio</a>
+            <a class="menu-item menu-logo">jd</a>
+            <a class="menu-item text-menu-item" href="#">my blog</a>
+            <a class="menu-item text-menu-item" href="#">contact me</a>
             <!--            <img src="images/HeaderBG.png" id="menu-bg">-->
 
         </div>
